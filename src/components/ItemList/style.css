@@ -1,0 +1,8 @@
+.list-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
