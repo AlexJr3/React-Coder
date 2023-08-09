@@ -10,9 +10,8 @@ const ItemDetail = ({ title, description, category, price, image }) => {
         <img src={image} alt={title} className="item-img" />
       </picture>
       <section className="item-info">
-        <p>categoria: {category}</p>
-        <p>Descripcion: {description}</p>
-        <p>Precio: {price}</p>
+        <p className="item-category">Categoria: {category}</p>
+        <b className="item-price"> {price}$</b>
       </section>
       <footer className="item-footer">
         <ItemCount />

@@ -1,0 +1,74 @@
+/* Estilo de ItemCount */
+
+.count {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls .controls-btn {
+  background: #00d1b2;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.controls-btn:hover {
+  color: white;
+}
+
+.increment {
+  border-radius: 0 5px 5px 0;
+}
+
+.decrement {
+  border-radius: 5px 0 0 5px;
+}
+
+.controls-number {
+  display: flex;
+  background: #00d1b2;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.add-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-cart .add-btn {
+  border: none;
+  padding: 10px 20px;
+  background: #00d1b2;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-cart .add-btn:hover {
+  border: none;
+  padding: 10px 20px;
+  background: #00d1b2;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}

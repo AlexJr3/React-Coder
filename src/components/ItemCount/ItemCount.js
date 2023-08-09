@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./style.css";
 
 const ItemCount = () => {
   const [quantity, setQuantity] = useState(0);
@@ -17,13 +18,12 @@ const ItemCount = () => {
   return (
     <div className="count">
       <div className="controls">
-        <button className="controls-btn" onClick={incremet}>
-          +
-        </button>
-        <h4 className="number">{quantity}</h4>
-        <button className="controls-add-btn">Agregar al carrito</button>
-        <button className="controls-btn" onClick={decrement}>
+        <button className="controls-btn decrement" onClick={decrement}>
           -
+        </button>
+        <h4 className="controls-number">{quantity}</h4>
+        <button className="controls-btn increment" onClick={incremet}>
+          +
         </button>
       </div>
       <div className="add-cart">

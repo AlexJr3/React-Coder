@@ -40,3 +40,44 @@
   width: 100%;
   height: 200px;
 }
+
+.item-info {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+.item-price {
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.item-stock {
+  color: #a5a5a5;
+}
+
+.item-footer {
+  display: flex;
+  width: 90%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.item-footer a {
+  background-color: #00d1b2;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  color: #1f1c1c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-category {
+  font-size: 18px;
+}

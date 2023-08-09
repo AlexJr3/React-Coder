@@ -7,10 +7,11 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
 
   const { categoryId } = useParams();
+  console.log(categoryId);
 
   useEffect(() => {
     const asyncFunc = categoryId ? getProductsByCategory : getProducts;
-    asyncFunc(categoryId)
+    asyncFunc(Number(categoryId))
       .then((response) => setProducts(response))
       .catch((error) => console.log(error));
   }, [categoryId]);
