@@ -1,18 +1,11 @@
-import { useState } from "react";
+import { useCount } from "../../hooks/useCount";
 import "./style.css";
 
-const ItemCount = () => {
-  const [quantity, setQuantity] = useState(0);
+const ItemCount = ({ onAdd }) => {
+  const { increment, decrement, quantity } = useCount();
 
-  const decrement = () => {
-    if (quantity === 0) {
-      return;
-    }
-    return setQuantity(quantity - 1);
-  };
-
-  const incremet = () => {
-    setQuantity(quantity + 1);
+  const handleClick = () => {
+    onAdd(quantity);
   };
 
   return (
@@ -22,12 +15,14 @@ const ItemCount = () => {
           -
         </button>
         <h4 className="controls-number">{quantity}</h4>
-        <button className="controls-btn increment" onClick={incremet}>
+        <button className="controls-btn increment" onClick={increment}>
           +
         </button>
       </div>
       <div className="add-cart">
-        <button className="add-btn">Agregar al carrito</button>
+        <button className="add-btn" onClick={handleClick}>
+          Agregar al carrito
+        </button>
       </div>
     </div>
   );

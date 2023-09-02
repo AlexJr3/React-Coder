@@ -19,11 +19,7 @@ const getProductById = (pid) => {
 const getProductsByCategory = (categoryId) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(
-        listProduct.filter(
-          (el) => el.category.toLowerCase() === categoryId.toLowerCase()
-        )
-      );
+      resolve(listProduct.filter((el) => el.category === categoryId));
     }, 500);
   });
 };

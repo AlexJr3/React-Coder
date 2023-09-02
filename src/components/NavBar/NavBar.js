@@ -1,52 +1,50 @@
 import logo from "./logo.png";
 import { CartWidget } from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
+
+const categories = {
+  electronica: "electronics",
+  joyeria: "jewelery",
+  hombre: "men's clothing",
+  mujer: "women's clothing",
+};
+
 const NavBar = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="navbar">
+        <Link className="navbar-item" to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
       </div>
 
       <div className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item" href="home">
-            Home
-          </a>
+          <Link
+            className="navbar-item"
+            to={`/category/${categories.electronica}`}
+          >
+            Electronica
+          </Link>
 
-          <a className="navbar-item" href="Documentation">
-            Documentation
-          </a>
+          <Link className="navbar-item" to={`/category/${categories.joyeria}`}>
+            Joyeria
+          </Link>
 
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link" href="#more">
-              More
-            </a>
+          <Link className="navbar-item" to={`/category/${categories.hombre}`}>
+            Ropa - Hombre
+          </Link>
 
-            <div className="navbar-dropdown">
-              <a className="navbar-item" href="#about">
-                About
-              </a>
-
-              <a className="navbar-item" href="#about">
-                Jobs
-              </a>
-
-              <a className="navbar-item" href="#about">
-                Contact
-              </a>
-            </div>
-          </div>
+          <Link className="navbar-item" to={`/category/${categories.mujer}`}>
+            Ropa - Mujer
+          </Link>
         </div>
       </div>
 
       <div className="navbvar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <a className="button is-primary" href="cart">
-              <CartWidget />
-            </a>
+            <CartWidget />
           </div>
         </div>
       </div>

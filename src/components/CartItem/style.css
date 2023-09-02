@@ -1,0 +1,121 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-container .controls-cart-buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-container .controls-cart-buy h3 {
+  font-size: 2rem;
+  align-self: flex-end;
+  padding: 0 15px;
+}
+
+.cart-container .controls-cart-buy button {
+  padding: 12px 50px;
+  border: none;
+  background: #00c4a7;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  transition: background ease-out 0.2s, color ease-out 0.2s;
+}
+
+.cart-container .controls-cart-buy a {
+  padding: 12px 50px;
+  border: none;
+  background: #00c40a;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-container .controls-cart-buy button:hover {
+  background: #00ffdd;
+  color: black;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  padding: 10px 18px;
+  background-color: antiquewhite;
+}
+
+.cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 8px 10px;
+}
+
+.cart-item-info .cart-title,
+.cart-item-quantity,
+.cart-item-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+}
+
+.control-remove {
+  width: 50px;
+  height: 50px;
+}
+
+.control-remove button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #00c4a7;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  transition: background ease-out 0.2s, color ease-out 0.2s;
+}
+
+.control-remove button:hover {
+  background: #c42700;
+  color: black;
+}
+
+.no-items-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-items-cart h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.no-items-cart a {
+  background-color: #00c4a7;
+  padding: 12px 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.no-items-cart a:hover {
+  background-color: #00ffdd;
+  color: black;
+}

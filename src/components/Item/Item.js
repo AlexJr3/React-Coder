@@ -1,7 +1,7 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const Item = ({ id, title, price, image, rating }) => {
+const Item = ({ id, title, price, image }) => {
   return (
     <div className="cardItem">
       <header className="item-header">
@@ -12,9 +12,6 @@ const Item = ({ id, title, price, image, rating }) => {
       </picture>
       <section className="item-info">
         <b className="item-price">{price}$</b>
-        <p className="item-stock">
-          Stock: <b>{rating.count}</b>
-        </p>
       </section>
       <footer className="item-footer">
         <Link to={`/item/${id}`}>Ver detalle</Link>
